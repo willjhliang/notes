@@ -21,7 +21,7 @@ jobs:
     steps:
     - name: Github REST API Call
       env:
-        CI_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        CI_TOKEN: ${{ secrets.CI_TOKEN }}
         PARENT_REPO: public-garden
         PARENT_BRANCH: develop
         WORKFLOW_ID: 48116974
