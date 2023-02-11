@@ -1,3 +1,5 @@
+> Sorry, this note is under construction. It'll get more detailed in the future!
+
 # Theory
 GANs are generative models that learn via an adversarial process. It consists of a generative and a discriminative network; the former generates samples from a random latent space, and the latter ties to distinguish between generative outputs and samples from the training data.
 

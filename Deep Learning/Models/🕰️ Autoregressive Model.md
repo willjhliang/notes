@@ -1,3 +1,5 @@
+> Sorry, this note is under construction. It'll get more detailed in the future!
+
 # Theory
 Autoregressive models are often used to model time series data where the past gives some information about the present prediction.
 
