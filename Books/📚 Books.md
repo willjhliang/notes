@@ -12,4 +12,4 @@ The following are book summaries about success, relationships, and meaning.
 
 # Meaning
 1. [[⌛️ The Power of Regret]] discusses how we can leverage regret to improve ourselves.
-2. [[⭐️ Everything is F*cked]] illustrates a better life, one without hope and full of pain.
+2. [[⭐️ Everything is F-cked]] illustrates a better life, one without hope and full of pain.
