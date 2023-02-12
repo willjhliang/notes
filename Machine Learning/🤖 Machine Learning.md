@@ -68,7 +68,7 @@ Another way to view dimensionality reduction is by grouping points together; eac
 1. [[🎒 K-Means Clustering]] groups points into multiple clusters, which each point belonging to exactly one cluster.
 2. [[📼 Gaussian Mixture Model]] is a generalization of this idea with soft clusters: each point has a probability of belonging to each group.
 
-The models above hidden states that explained some underlying pattern in our data. We can capture these relationships using a [[⏰ Bayesian (Belief) Network]], which graphically represent complex joint probability distributions. Structuring these networks in certain ways and assigning each node a hidden or observable value, we get more advanced algorithms.
+The models above hidden states that explained some underlying pattern in our data. We can capture these relationships using a [[🚨 Bayesian (Belief) Network]], which graphically represent complex joint probability distributions. Structuring these networks in certain ways and assigning each node a hidden or observable value, we get more advanced algorithms.
 1. [[📄 Latent Dirichlet Allocation]] expands upon the mixture idea to classify documents, associating hidden topics with each document and word.
 2. [[⛓️ Markov Chain]] models dynamic systems that transition between states.
 3. [[☂️ Hidden Markov Model]]s convert an input sequence to an output sequence by moving between hidden states.

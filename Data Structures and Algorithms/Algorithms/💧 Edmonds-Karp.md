@@ -50,7 +50,7 @@ def bfs(s, t, n, adj, cap):
 	return 0, par
 ```
 
-### Runtime
+# Runtime
 $$ O(VE^2) $$
 
 Since each vertex in our graph has an incident edge, BFS takes $O(V + E) = O(E)$ time.
