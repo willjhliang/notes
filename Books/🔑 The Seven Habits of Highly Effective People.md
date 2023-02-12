@@ -10,6 +10,8 @@ All humans share a set of unyielding principles. Unlike values or practices, the
 
 The following seven habits are based on principles, explaining how we can shift our character itself to grow. Each require knowledge, skill, and desire and will evolve us from dependence to independence to interdependence. As we grow, we must also keep in mind the P/PC balance between production (golden egg) and production capability (magic goose); reaping the benefits of the former and taking care of the latter are both crucial to long-term success.
 
+First, there's the Private Victory: embedding proactivity, responsibility, and discipline deep into ourselves. Then with self-mastery comes the Public Victory: building strong, beautiful relationships with others. The key to the latter is investing in the emotional bank account, a metaphorical measure of how goodwill deposits with another person. Our most import deposits include understanding the other person, giving little kindnesses, keeping commitments, clarifying expectations, showing integrity, and apologizing sincerely after mistakes. Problems, big or small, can also be opportunities to strengthen a bond.
+
 ## Be proactive
 Social determinism asserts that we are shaped by our genetics, upbringing, and environment. However, our self-awareness gifts us one freedom that cannot be conditioned—between stimulus and response, our freedom to choose.
 

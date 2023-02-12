@@ -1,4 +1,7 @@
-The following are book summaries about success, relationships, and meaning.
+The following are book summaries about success, relationships, and meaning. The purpose of these notes is not just to summarize everything but to also serve as a reminder to execute these lessons in our own lives—learning is nothing without execution.
+
+> [!note]
+> I took these notes trying to be as unbiased as possible, and I don't agree with some of what these books say. Please don't read them thinking it's my personal philosophy!
 
 # Success
 1. [[👟 Atomic Habits]] tackles proven strategies for forming new habits and breaking old ones.
