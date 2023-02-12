@@ -1,7 +1,7 @@
 # Theory
 Neural networks can be seen as a non-linear function $f$ that outputs some prediction $\hat{y}$ given the input $x$ and its learned weights $\theta$; in other words, $\hat{y} = f(x ; \theta)$.
 
-As before, we want to minimize the loss $J(\theta)$, which can be [[📌 Norms]] for regression or [[🧮 Information Theory#Cross Entropy]] for classification.
+As before, we want to minimize the loss $J(\theta)$, which can be [[📌 Norms]] for regression or [[ℹ️ Information Theory#Cross Entropy]] for classification.
 
 Neural networks consists of layers of neurons. Each neuron applies weights to its inputs and runs it through an activation function. $$a = f(Wx + b)$$Its inputs are the outputs of all neurons in the previous layer, and its output is fed to every neuron in the following layer.
 

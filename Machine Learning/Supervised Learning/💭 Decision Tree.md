@@ -3,7 +3,7 @@ Certain features in $x$ are indicative of what $y$ can be; given training data $
 
 Decision trees use this idea to recursively divide up the data in $D$, building a binary tree where each node is a “yes-no” question, and depending on the answer, we go to a different subtree; each leaf gives a prediction for the value of $y$.
 
-To maximize the effectiveness of our questions, we want to split up the data that gets to a node using a question about a feature that most determines $y$. To do this, we maximize [[🧮 Information Theory#Information Gain]].
+To maximize the effectiveness of our questions, we want to split up the data that gets to a node using a question about a feature that most determines $y$. To do this, we maximize [[ℹ️ Information Theory#Information Gain]].
 
 # Model
 Our model is a binary tree: each internal node is a question, each edge is an answer, and leaves are predictions for $y$.

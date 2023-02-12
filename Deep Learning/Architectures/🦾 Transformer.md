@@ -30,7 +30,7 @@ The feed-forward blocks are simple neural networks that calculate $$\text{ReLU}(
 Lastly, since we convert the each input token into an embedding, we maintain positional information for each token by adding a positional encoding, calculated with sines and cosines, that determine the distances between words.
 
 # Training
-Transformers are trained with backpropagation. The loss function is usually [[🧮 Information Theory#Cross Entropy]] or [[📏 KL Divergence]], comparing the predicted probability distribution with the one-hot encoded true label.
+Transformers are trained with backpropagation. The loss function is usually [[ℹ️ Information Theory#Cross Entropy]] or [[📏 KL Divergence]], comparing the predicted probability distribution with the one-hot encoded true label.
 
 # Prediction
 First, we run the entire input through the encoder to generate the keys and values used in the decoder.
