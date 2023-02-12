@@ -3,8 +3,6 @@ NMS filters out bounding boxes based on overlap and their confidence scores. The
 2. Compare this proposal with all others, remove those with IoU over threshold.
 3. Repeat above until there are no proposals left.
 
-![https://miro.medium.com/max/1400/1*iVUDd4fYhL5evD1M5156DA.png](https://miro.medium.com/max/1400/1*iVUDd4fYhL5evD1M5156DA.png)
-
 ## Soft NMS
 SoftNMS uses a more relaxed policy for removing proposals. Instead of directly deleting proposals with high IoU, we can reduce their confidence score.
 
