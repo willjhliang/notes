@@ -1,3 +1,7 @@
+> [!abstract]
+> Maximum likelihood estimate (MLE) is how we estimate probabilities given only the data. Maximum A Posteriori (MAP) is what we would guess given the data as well as some prior hypothesis.
+> For example, if my coin flips result in $1$ head and $3$ tails, my MLE is $1/4$. However, if I also know that it's a nearly-fair coin, my MAP would be somewhere between $1/4$ and $1/2$.
+
 # Theory
 Given historical data $D$, we can estimate the probabilities $\theta$ that generated this data.
 1. With Maximum Likelihood Estimate (MLE), we find $\theta$ that maximizes the likelihood of generating $D$.
