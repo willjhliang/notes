@@ -94,10 +94,10 @@ Model-based methods explicitly learn about the environment $p(s_{t+1} \vert s_t,
 2. [[🧨 Dynamic Programming]] derives the policy by checking the possible moves for each state.
 
 Model-free methods learn $V$ and $Q$ by directly playing in the environment.
-1. [[⏳ Temporal Difference (0)]] is a generalized algorithm that iteratively takes a single action and learns better $V$ or $Q$ values.
+1. [[⌛️ Temporal Difference (0)]] is a generalized algorithm that iteratively takes a single action and learns better $V$ or $Q$ values.
 2. [[🧭 SARSA]] is a variant of TD(0) that uses on-policy, exploratory updates.
 3. [[🔭 Q-Learning]] is another variant of TD(0) that uses off-policy exploratory actions to optimize a exploitative policy.
-4. [[🎲 Monte Carlo Tree Search]] simulates entire games first before optimizing its values.
+4. [[🌲 Monte Carlo Tree Search]] simulates entire games first before optimizing its values.
 
 [[🛸 Deep Q-Learning]] is at the intersection of reinforcement learning and deep learning. Whereas SARSA and Q-Learning kept its $Q(s, a)$ values in a table, it can instead be interpreted as a function captured by a neural network. This generalization provides additional capabilities.
 1. We can directly model the policy $\pi_\theta(a \vert s)$ with a neural network and optimize via policy gradients.

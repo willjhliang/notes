@@ -5,7 +5,7 @@ Monte Carlo Tree Search is a model-free method that evaluates and improves a pol
 
 Like other methods, it alternates between evaluation and improvement.
 
-We generally use [[🧧 Epsilon-Greedy]] off-policy play, exploring on our first move and exploiting the rest. However, there are better ways to choose random moves. Below are some ways to “rank” the non-greedy moves, and we pick the best.
+We generally use [[🎲 Epsilon-Greedy]] off-policy play, exploring on our first move and exploiting the rest. However, there are better ways to choose random moves. Below are some ways to “rank” the non-greedy moves, and we pick the best.
 1. Low visit count.
 2. High move probability under policy $\pi$.
 3. High value based on a neural network.

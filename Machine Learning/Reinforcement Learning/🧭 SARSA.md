@@ -1,5 +1,5 @@
 # Theory
-SARSA is a model-free, on-policy temporal difference learning method. Its policy is inherently exploratory, using [[🧧 Epsilon-Greedy]] to choose its next move.
+SARSA is a model-free, on-policy temporal difference learning method. Its policy is inherently exploratory, using [[🎲 Epsilon-Greedy]] to choose its next move.
 
 To end up with a policy that plays as best as possible, we need to anneal $\epsilon$, which decreases the probability of our target policy choosing a random exploratory move.
 
