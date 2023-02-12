@@ -3,7 +3,7 @@ Norm of $x$, denoted $\Vert x \Vert$, represents the “size” of the vector wi
 2.  Scalability: $\Vert kx \Vert = \vert k \vert * \Vert x \Vert$.
 3.  Triangle inequality: $\Vert x + y \Vert \leq \Vert x \Vert + \Vert y \Vert$.
 
-$\Vert x-y \Vert$ is usually used as a distance measurement since it’s symmetric, non-negative, and preserves the triangle inequality.
+$\Vert x-y \Vert$ is usually used as a distance measurement since it’s symmetric, non-negative, and follows the triangle inequality.
 
 $P$-norm is defined as $$\Vert x \Vert_p = (\sum_{i=1}^m \vert x_i\vert^p)^{1/p}$$
 However, for extreme values of $p$, there are special norms.
