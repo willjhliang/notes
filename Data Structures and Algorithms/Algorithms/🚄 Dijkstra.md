@@ -1,4 +1,5 @@
-Shortest-path problem: find the shortest path from $s$ to all other vertices in a weighted graph $G$ with non-negative weights.
+# Shortest Path Problem
+Find the shortest path from $s$ to all other vertices in a weighted graph $G$ with non-negative weights.
 
 # Theory
 Greedily go to the next-closest vertex $v$, then update distances to its neighbors. If there was a shorter path to $v$ that ends with $(u, v)$, we would’ve gone to $u$ already and found this path; therefore, the one we just found must be the shortest path.

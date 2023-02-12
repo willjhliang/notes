@@ -1,4 +1,5 @@
-Shortest-path problem: find the shortest path from $s$ to all other vertices in a weighted graph $G$, works for negative weights and detects negative-weight cycles.
+# Shortest Path Problem
+Find the shortest path from $s$ to all other vertices in a weighted graph $G$, works for negative weights and detects negative-weight cycles.
 
 # Theory
 Iteratively try to relax each edge, using it if it creates a better shortest path.

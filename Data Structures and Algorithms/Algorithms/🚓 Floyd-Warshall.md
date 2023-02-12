@@ -1,4 +1,5 @@
-Shortest path problem: find the shortest path between all pairs of vertices $(u, v)$ in weighted graph $G$.
+# Shortest Path Problem
+Find the shortest path between all pairs of vertices $(u, v)$ in weighted graph $G$.
 
 # Theory
 Each between two vertices contains at most $V - 2$ internal vertices (not including its endpoints), so we can incrementally build this path over many iterations. Such a path $P = v_1 v_2 \dots v_n$ would take at most $O(V)$ iterations to construct since we find $v_1 v_2$ in the first iteration, then $v_1 v_2 v_3$, and so on.

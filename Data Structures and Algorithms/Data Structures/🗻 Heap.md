@@ -1,3 +1,6 @@
+# Minimum Value Problem
+Maintain a set that support quick insertions and minimum-value retrievals.
+
 # Theory
 Maintain binary tree where the current node’s value is smaller than its child node’s value. This allows for quick minimum pops and insertion.
 

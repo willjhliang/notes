@@ -1,4 +1,5 @@
-Cycle detection problem: visit each vertex connected to source $s$ in a graph $G$, detecting any cycles if they exist.
+# Traversal Problem
+Visit each vertex connected to source $s$ in a graph $G$, detecting any cycles if they exist.
 
 # Theory
 For each vertex, recurse on each of its neighbors if they haven’t been visited yet; this ensures that we visit every reachable vertex from $s$.

@@ -1,3 +1,6 @@
+# Map Problem
+Maintain a set of key-value pairs with quick insertion, removal, and retrieval.
+
 # Theory
 Use a hash function $f$ to map every key to an index in an array. In case of collision, resolve via bucketing (chaining) or open addressing.
 

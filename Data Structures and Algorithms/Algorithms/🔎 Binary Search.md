@@ -1,4 +1,5 @@
-Search problem: find the index of element $x$ in a sorted array $A$ if it exists or the insertion point if it doesn’t.
+# Search Problem
+Find the index of element $x$ in a sorted array $A$ if it exists or the insertion point if it doesn’t.
 
 # Theory
 Recursively divide the array into two halves; $x$ must appear in only one of these two halves, depending on whether it’s greater or less than the midpoint between the halves.

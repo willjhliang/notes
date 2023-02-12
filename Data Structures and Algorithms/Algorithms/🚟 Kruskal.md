@@ -1,4 +1,5 @@
-Minimum spanning tree problem: find the spanning tree of weighted-graph $G$ (connects all vertices) that has minimum cumulative weight.
+# Minimum Spanning Tree Problem
+Find the spanning tree of weighted-graph $G$ (connects all vertices) that has minimum cumulative weight.
 
 # Theory
 We greedily add the smallest unused edge $e$ to our MST if it doesn’t form a cycle. $e = (u, v)$ forms a cycle iff $u$ and $v$ are in the same connected component.

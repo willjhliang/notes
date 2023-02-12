@@ -1,4 +1,5 @@
-Strongly connected components problem: find the partition $S_1, S_2, \ldots S_k$ of $G$ such that all vertices in each partition are reachable from each other and that each partition is maximal. Each partition is a strongly connected component.
+# Strongly Connected Components Problem
+Find the partition $S_1, S_2, \ldots S_k$ of $G$ such that all vertices in each partition are reachable from each other and that each partition is maximal. Each partition is a strongly connected component.
 
 # Theory
 As shown in [[⏱️ Finish-Time DFS]], a source vertex must have larger DFS finish times than other vertices.

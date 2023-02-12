@@ -1,4 +1,5 @@
-Max-flow min-cut problem: find the maximum flow of a flow network such that
+# Max-Flow Min-Cut Problem
+Find the maximum flow of a flow network such that
 1. An edge’s flow cannot exceed capacity.
 2. A vertex’s incoming flow equals outgoing flow.
 

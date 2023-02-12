@@ -1,4 +1,5 @@
-Topological sort problem: calculate a sorting of vertices in DAG $G$ such that all edges in $G$ point “forward” in the sort. In other words, find a sort where there is no $e = (u, v)$ where $v$ appears before $u$.
+# Topological Sort Problem
+Calculate a sorting of vertices in DAG $G$ such that all edges in $G$ point “forward” in the sort. In other words, find a sort where there is no $e = (u, v)$ where $v$ appears before $u$.
 
 # Theory
 Keep track of the number of incoming edges for each vertex $v$. If $v$ has no incoming edges, it can safely be added to the ordering.

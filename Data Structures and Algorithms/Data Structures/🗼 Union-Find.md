@@ -1,3 +1,6 @@
+# Disjoint Set Problem
+Maintain a series of disjoint sets supporting quick unions and identification.
+
 # Theory
 UF builds a tree for each disjoint set, merging them optimally with path compression to achieve fast asymptotic query times.
 

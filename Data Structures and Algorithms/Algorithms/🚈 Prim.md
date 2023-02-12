@@ -1,4 +1,5 @@
-Minimum spanning tree problem: find the spanning tree of weighted-graph $G$ (connects all vertices) that has minimum cumulative weight.
+# Minimum Spanning Tree Problem
+Find the spanning tree of weighted-graph $G$ (connects all vertices) that has minimum cumulative weight.
 
 # Theory
 The cut property states that for any cut $(S, V \setminus S)$ of $G$, the minimum edge $e$ crossing the cut must be in all minimum spanning trees. Prim uses this property to greedily add minimum-weight edges, building a connected component $C$ and applying the property to cut $(C, V \setminus C)$.

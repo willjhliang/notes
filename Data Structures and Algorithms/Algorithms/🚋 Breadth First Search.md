@@ -1,4 +1,5 @@
-Shortest-path problem: visit each vertex connected to source $s$ in a graph $G$, finding the shortest path from $s$ to $v$ for all $v$ in unweighted graph $G$.
+# Traversal Problem
+Visit each vertex connected to source $s$ in a graph $G$, finding the shortest path from $s$ to $v$ for all $v$ in unweighted graph $G$.
 
 # Theory
 Keep a queue of vertices that can be visited, and for each vertex in the queue, add its neighbors to the queue if they haven’t been visited before. The queue ensures that we go through vertices in ascending distance order, so BFS finds the minimum distance to all vertices (given that the graph is unweighted).

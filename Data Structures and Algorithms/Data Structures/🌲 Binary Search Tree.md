@@ -1,3 +1,6 @@
+# Ordered Set Problem
+Maintain an ordered set of elements, supporting quick insertion and search.
+
 # Theory
 Maintain a binary tree such that all nodes in the left subtree are smaller and all nodes in the right subtree are bigger than the current node. This allows for quick inserts and deletes, given that the tree is balanced.
 
