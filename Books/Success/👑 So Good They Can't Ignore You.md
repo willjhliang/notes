@@ -1,3 +1,4 @@
+> [!abstract]
 > Why working right trumps finding the right work.
 
 # Summary

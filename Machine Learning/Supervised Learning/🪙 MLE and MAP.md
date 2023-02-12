@@ -4,8 +4,8 @@
 
 # Theory
 Given historical data $D$, we can estimate the probabilities $\theta$ that generated this data.
-1. With Maximum Likelihood Estimate (MLE), we find $\theta$ that maximizes the likelihood of generating $D$.
-2. With Maximum A Posteriori (MAP), we already have some pre-existing hypothesis about our probabilities, termed a prior $P(\theta)$, and use our new data $D$ to update our hypothesis. In other words, we find $\theta$ that’s most likely explained by $D$ as well as our prior.
+1. For Maximum Likelihood Estimate (MLE), we find $\theta$ that maximizes the likelihood of generating $D$.
+2. For Maximum A Posteriori (MAP), we already have some pre-existing hypothesis about our probabilities, termed a prior $P(\theta)$, and use our new data $D$ to update our hypothesis. In other words, we find $\theta$ that’s most likely explained by $D$ as well as our prior.
 
 MLE and MAP are general ideas that can be applied to many machine learning algorithms. For the sake of illustration, the following uses a extremely simple problem: estimating the probability a coin lands heads.
 

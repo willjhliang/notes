@@ -1,4 +1,5 @@
-> Sorry, this note is under construction. It'll get more detailed in the future!
+> [!warning]
+> Sorry, this note is under construction. Feel free to take a look at what I've got so far, and please come back later!
 
 # Theory
 VAE is a modification of the standard [[🧬 Autoencoder]] that uses probability distributions in the latent space instead of hard values. Our decoder samples from the latent distribution to generate the reconstruction.

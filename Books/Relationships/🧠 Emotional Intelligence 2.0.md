@@ -1,3 +1,4 @@
+> [!abstract]
 > An objective breakdown of how individuals develop EQ.
 
 # Summary

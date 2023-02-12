@@ -1,4 +1,5 @@
-> Sorry, this note is under construction. It'll get more detailed in the future!
+> [!warning]
+> Sorry, this note is under construction. Feel free to take a look at what I've got so far, and please come back later!
 
 # Theory
 The key idea behind diffusion is to destroy images through gaussian noise, then learn a  way to reverse time and recreate the original image. If we successfully learn such a model, then we can generate any picture from random noise.

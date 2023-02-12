@@ -1,3 +1,4 @@
+> [!abstract]
 > The psychology and philosophy of how regret empowers us to be better.
 
 # Summary

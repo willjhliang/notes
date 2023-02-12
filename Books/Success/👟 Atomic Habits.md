@@ -1,3 +1,4 @@
+> [!abstract]
 > How to achieve remarkable results with tiny changes, one day at a time.
 
 # Summary

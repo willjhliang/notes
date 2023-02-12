@@ -1,3 +1,4 @@
+> [!abstract]
 > How to live without hope, for a better world.
 
 # Summary

@@ -1,3 +1,4 @@
+> [!abstract]
 > A guide to achieving financial and psychological freedom.
 
 # Summary

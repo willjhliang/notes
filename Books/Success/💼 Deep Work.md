@@ -1,3 +1,4 @@
+> [!abstract]
 > The most important skill in our information-age that leads to a more productive, balanced, and meaningful life.
 
 # Summary
