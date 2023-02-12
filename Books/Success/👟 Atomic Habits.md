@@ -58,7 +58,7 @@ We can also turn to commitment devices that force our future behavior by making 
 ## Make it satisfying
 We'll repeat a behavior if the experience itself is satisfying, but more often than not, a good habit pays out in the long term and lacks any short term benefits. In order to increase the chances that we continue the habit, we must associate a small, immediate reward to the habit. Delayed gratification will kick in later, but for the first few weeks or months, this secondary reward is what motivates us to keep going.
 
-On top of the immediate reward, we must also feel like we're making progress. Using a habit tracker (like marking a calendar) is an excellent way to not only make the habit satisfying but also keep a visual record. With this, we can focus on keeping the streak alive, and even if it breaks, we must never miss twice; **one day is a mistake, two days is the beginning of a new bad habit**.
+On top of the immediate reward, we must also feel like we're making progress. Using a habit tracker (like marking a calendar) is an excellent way to not only make the habit satisfying but also keep a visual record. With this, we can focus on keeping the streak alive, and even if it breaks, we must never miss twice; *one day is a mistake, two days is the beginning of a new bad habit*.
 
 Inversely, to make a bad habit unsatisfying, we must create an immediate consequence. For example, we can agree to a specified punishment and have someone keep us in check. Knowing that there's another person involved is a powerful deterrent.
 
