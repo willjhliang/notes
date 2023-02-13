@@ -1,3 +1,6 @@
+> [!abstract]
+> The evidence lower bound (ELBO) is a lower bound on the log probability of our data $x$. When $p(x)$ is intractable in a latent-variable model, we can maximize the ELBO instead as a proxy objective.
+
 We can think of observed data $x$ as generated from latent variables $z$. The evidence (or variational) lower bound (ELBO) deals with a joint distribution on observed data $x$ and latents $z$.
 
 With likelihood-based models, we want to approximate the data distribution (such as a distribution of cat images) $p(x)$ with a model $p_\theta(x)$ that has parameters $\theta$. A good approximation has a high probability of generating our data $x$, so we optimize parameters $\theta$ to maximize $p_\theta(x)$, the likelihood of our model generating our data.
