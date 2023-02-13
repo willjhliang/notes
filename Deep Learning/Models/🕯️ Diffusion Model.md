@@ -1,8 +1,11 @@
 > [!warning]
 > Sorry, this note is under construction. Feel free to take a look at what I've got so far, and please come back later!
 
+> [!abstract]
+> Diffusion breaks down data over multiple time steps and trains a model to iteratively reconstruct it. Thus, the model learns a way to transition samples from senseless noise back to the data distribution.
+
 # Theory
-The key idea behind diffusion is to destroy images through gaussian noise, then learn a  way to reverse time and recreate the original image. If we successfully learn such a model, then we can generate any picture from random noise.
+Diffusion iteratively destroys data through gaussian noise and learns a way to reverse time and recreate the original image. If we successfully learn such a model, then we can generate any picture from random noise.
 
 Diffusion models destroy the training distribution of images $q(x)$ by repeatedly applying gaussian noise for $T$ time-steps, known as the forward process. $x_t$ represents the distribution after applying noise for $t$ steps; $x_0$ is the original image, and $x_T$ is isotropic noise. The forward process equation is $$q(x_t \vert x_{t-1}) = \mathcal{N}(\sqrt{1-\beta_t} x_{t-1}, \beta_t \mathbf{I})$$
 where $\beta_t$ is controlled by a variance schedule, which dictates how much noise to add at every time step $t$. $\beta_t$ usually increases as $t$ increases.
