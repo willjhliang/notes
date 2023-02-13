@@ -2,11 +2,9 @@ We can think of observed data $x$ as generated from latent variables $z$. The ev
 
 With likelihood-based models, we want to approximate the data distribution (such as a distribution of cat images) $p(x)$ with a model $p_\theta(x)$ that has parameters $\theta$. A good approximation has a high probability of generating our data $x$, so we optimize parameters $\theta$ to maximize $p_\theta(x)$, the likelihood of our model generating our data.
 
-We can calculate likelihood in two ways:
-1. Marginalize over latent $z$.
-		$$p_\theta(x) = \int p_\theta(x, z) dz$$
-2. Use the chain rule of probability.
-		$$p_\theta(x) = \frac{p_\theta(x, z)}{p_\theta(z \vert x)}$$
+We can calculate likelihood in two ways.
+*  By marginalizing over latent $z$. $$p_\theta(x) = \int p_\theta(x, z) dz$$
+- By using the chain rule of probability. $$p_\theta(x) = \frac{p_\theta(x, z)}{p_\theta(z \vert x)}$$
 
 Both methods pose a challenge: the former requires us to integrate over all latent variables, which is often intractable, and the latter requires knowing the ground truth latents $p(z \vert x)$. The ELBO serves to lower bound the evidence, defined here as the log likelihood of $x$. *By training a model to maximize the ELBO, we also maximize $p_\theta(x)$.*
 
