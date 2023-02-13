@@ -8,7 +8,7 @@ With likelihood-based models, we want to approximate the data distribution (such
 We can calculate likelihood by marginalizing over latent $z$ or using the chain rule.
 1. $$p_\theta(x) = \int p_\theta(x, z) dz$$
 2. $$p_\theta(x) = \frac{p_\theta(x, z)}{p_\theta(z \vert x)}$$
-Both methods pose a challenge: the former requires us to integrate over all latent variables, which is often intractable, and the latter requires knowing the ground truth latents $p(z|x)$. The ELBO serves to lower bound the evidence, defined here as the log likelihood of $x$. *By training a model to maximize the ELBO, we also maximize $p_\theta(x)$.*
+Both methods pose a challenge: the former requires us to integrate over all latent variables, which is often intractable, and the latter requires knowing the ground truth latents $p(z \vert x)$. The ELBO serves to lower bound the evidence, defined here as the log likelihood of $x$. *By training a model to maximize the ELBO, we also maximize $p_\theta(x)$.*
 
 The inequality below shows the evidence on the left bounded by the ELBO on the right. $$\log p_\theta(x) \geq \mathbb{E}_{q_\phi(z \vert x)}\left[\log \frac{p_\theta(x, z)}{q_\phi(z \vert x)}\right] = \text{ELBO}$$
 where $q_\phi(z \vert x)$ is a distribution with parameters $\phi$ that we use to approximate $p_\theta(z \vert x)$. The inequality derivation is as follows.
