@@ -2,8 +2,9 @@
 > Sorry, this note is under construction. Feel free to take a look at what I've got so far, and please come back later!
 
 # Theory
-VAE is a modification of the standard [[🧬 Autoencoder]] that uses probability distributions in the latent space instead of hard values. Our decoder samples from the latent distribution to generate the reconstruction.
+Variational autoencoders are generative models that use encoders and decoders similar to those from the standard [[🧬 Autoencoder]] to go between the data distribution and latent space. Unlike a normal encoding method, we treat the latent space as its own distribution $p(z)$.
 
+## Intuition
 We use a probability distribution to force the decoder to recognize that small changes in the sampled latent vector should result in minor changes to the final image. For example, on a single training image, we can have multiple slightly-different sampled latent vectors, and the decoder must learn that they all correspond to the same image.
 
 However, with multiple training examples, it's still possible for the encoder to generate completely different distributions with low variance and different means, essentially acting as a normal autoencoder. We can mitigate this by regularizing the probability distribution in our loss function, forcing them all to be similar to the standard normal $\mathcal{N}(0, I)$.
@@ -13,9 +14,7 @@ By regularizing the distributions, we force the latent space to be a smooth dist
 The following picture represents the latent space for a model with only reconstruction loss, a model with only distribution regularization, and a successful VAE with both.
 ![[20230105112139.png]]
 
-The third graph shows the smooth latent space that merges the distributions of all classes together. Any chosen point can be decoded, as exemplified below.
-
-![[20230105112246.png]]
+The third graph shows the smooth latent space that merges the distributions of all classes together. 
 
 # Model
 Our model consists of encoder and decoder neural networks. The encoder predicts the mean and variance of each variable's distribution in our latent space instead of the variable's actual value.
