@@ -9,7 +9,7 @@ The image and camera systems are related by the camera intrinsics, which are $f,
 The camera and world coordinate systems are related by rotation and translation, which are matrices $R$ and $T$ respectively.
 
 # Camera Coordinates to Image Coordinates
-Using the equations from [[🔍 Projection Models#Pinhole Model]], we can convert coordinates to pixels with $$\begin{align} u &= f\frac{X_c}{Z_c} + u_0 \\ v &= f\frac{Y_c}{Z_c} + v_0 \end{align}$$
+Using the equations from [[🔍 Projection Models#Pinhole Model]], we can convert coordinates to pixels with $$\begin{align*} u &= f\frac{X_c}{Z_c} + u_0 \\ v &= f\frac{Y_c}{Z_c} + v_0 \end{align*}$$
 
 We can write this instead as a matrix equation, $$\lambda \begin{pmatrix} u \\ v \\ 1 \end{pmatrix} = \begin{pmatrix} f & 0 & u_0 \\ 0 & f & v_0 \\ 0 & 0 & 1 \end{pmatrix} \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \end{pmatrix}\begin{pmatrix} X_c \\ Y_c \\ Z_c \\ 1 \end{pmatrix} = K \begin{pmatrix}X_c \\ Y_c \\ Z_c\end{pmatrix}$$
 > We have the intermediate matrix in between because it's used when transforming from world to image coordinates. In this case, we just have $R = I$ and $T = 0$.
