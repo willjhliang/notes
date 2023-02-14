@@ -32,6 +32,16 @@ By mastering proactivity and visualization, we can now shape our reality with ou
 The things we struggle to put first are important but not urgent tasks, called "Quadrant II."" We have to proactively work on Quadrant II and also say "no" to the unimportant ones. Often, it helps to schedule our goals, making sure to adapt them into our daily plans. However, as we plan our efficient days, we must also keep in mind that *people are more important than things*, and our plans will inevitably change. Our primary focus is on relationships, and the secondary is on time.
 
 ## Think win-win
+Cooperation and the win-win ideology is a paradigm for successful relationships. The crux of our interactions must be the possibility of a third alternative where everyone benefits.
+
+Win-lose, lose-win, lose-lose, and win mentalities are all extremely common, and any can be appropriate in certain situations. However, in most cases, interdependence thrives through win-win. Even in situations when agreement isn't possible, agreeing to disagree—resulting in a "no deal"—is also okay; it's better to walk away amicably than to cause resentments from a loss on one side.
+
+To achieve win-win, we must excel in five dimensions.
+1. Character, the virtues of integrity, maturity, and the abundance mentality—the paradigm that there's enough for everyone.
+2. Relationships and constant deposits into the emotional bank account.
+3. Agreements, shifting the paradigm to partnership and self-supervision through mutual understanding.
+4. Systems that reward win-win agreements instead of competition and dichotomies.
+5. Processes that focus on the problem and not the person.
 
 ## Seek first to understand, then to be understood
 
