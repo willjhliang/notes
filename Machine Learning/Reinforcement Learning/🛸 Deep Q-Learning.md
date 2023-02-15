@@ -25,4 +25,5 @@ Initialize replay memory $\mathcal{D}$ and $Q$-network weights $\theta$. Then, r
 	1. Choose an action $a_t$ using the $Q$-network with [[🎲 Epsilon-Greedy]]
 	2. Take action $a_t$, observe $r_t$ and $s_{t+1}$.
 	3. Store $(s_t, a_t, r_t, s_{t+1})$ in $\mathcal{D}$.
-	4. Sample a random mini-batch of transitions from $\mathcal{D}$, and for each, let $$y_j = r_j + \gamma\max_{a'}Q(s_{j+1}, a_{j+1}; \theta)$$ and perform gradient descent on $$(y_j - Q(s_j, a_j; \theta))^2$$
+	4. Sample a random mini-batch of transitions from $\mathcal{D}$, and for each, let $$y_j = r_j + \gamma\max_{a'}Q(s_{j+1}, a_{j+1}; \theta)$$
+	5. Perform gradient descent on $$(y_j - Q(s_j, a_j; \theta))^2$$
