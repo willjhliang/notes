@@ -1,6 +1,7 @@
 # Theory
 Q-Learning is a model-free, off-policy temporal difference learning method. The policy for selecting the immediate action, $\mu$, is now different from the policy we want to optimize, $\pi$; the former is an exploratory action using [[🎲 Epsilon-Greedy]] while the latter plays out exploitative actions that are always greedy.
 
+> [!info]
 > Greedy action is the action that maximizes $Q$, $\arg\max_a Q(s, a)$.
 
 This is different from [[🧭 SARSA]] where $\pi$ is also exploratory. Q-Learning is generally preferred since it ultimately learns a greedy policy instead of an $\epsilon$-greedy one.

@@ -11,6 +11,7 @@ $N$ points gives us $3N$ equations and $N + 6$ unknowns, so we need $N \geq 3$ p
 We're given the location of three points ($A, B, C$ in the diagram) and the rays going out from the camera.
 
 ![[20230207091800.png|300]]
+> [!info]
 > The variables below will be different from the diagram. Distance to point $i$ is $d_i$. Distance between points $i$ and $j$ is $d_{ij}$. Angle between points $i$ and $j$ is $\delta_{ij}$. We'll also now use subscript to denote the $i$th point, maintaining uppercase letters as world variables and lowercase letters as camera variables.
 
 First, we'll solve for all $\lambda_i$. This is the depth of the point using camera coordinates; in other words, the point can be found at $\lambda_i \begin{pmatrix}x_i \\ y_i \\ 1\end{pmatrix}$. However, another way to find this point is by measuring the distance directly, then going along the unit direction; this equation for the point is $\frac{d_i}{\sqrt{x_i^2 + y_i^2 + 1}} \begin{pmatrix}x_i \\ y_i \\ 1\end{pmatrix}$. Thus, we have $$\lambda_i = \frac{d_i}{\sqrt{x_i^2 + y_i^2 + 1}}$$

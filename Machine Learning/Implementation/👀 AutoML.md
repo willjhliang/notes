@@ -9,6 +9,7 @@ The former is a model (originally a [[🌲 Random Forest]]) that takes in datase
 
 Given this predictor, we then build an ensemble stagewise on residuals, iteratively adding a scaled-down model that maximizes performance; we find this model by gradient ascending on the hyperparameter inputs, warm-starting with hyperparameters from similar problem.
 
+> [!info]
 > We add "a bit" of the model (scaling it down, similar to $\alpha$ in [[🎍 Gradient Tree Boosting]]) to prevent overfitting and to leave some residual behind for the next model.
 
 For deep learning, we use reinforcement learning setup. The policy generates deep learning architectures from an embedding space, analogous to an action. The environment then runs this architecture and gives back performance, analogous to reward. With this reward, the policy then gradient descends in the embedding space to improve predictions.

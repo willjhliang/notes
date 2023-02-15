@@ -52,6 +52,7 @@ But hope is a double-edged sword. It inspired humanitarian efforts but also dict
 
 Nietzsche believed that hope was not the answer to the impending existential crisis. Rather, he commanded *amor fati*, "love of one's fate," the unconditional acceptance of our life and experience.
 
+> [!note]
 > To love our fate is to close our desires and reality not by striving for the desires but by desiring reality. In other words, hope for nothing.
 
 In this modern age, our solution is to act without hope, to be better instead of hoping to be better. We must deny our Feeling Brain the meaning and purpose it so craves and go beyond the ideals of good and evil, instead embracing what *is*.

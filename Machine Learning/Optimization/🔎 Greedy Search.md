@@ -3,6 +3,7 @@ Greedy Search is a feature selection method used to optimize $L_0$ regularizatio
 # Streamwise Regression
 For each feature $x_j$, try adding $x_j$ to the model and retrain; if the penalized error improves, accept this new model.
 
+> [!info]
 > Time complexity is $O(p)$ as we go through each feature exactly once, in order.
 
 # Stepwise Regression
@@ -10,6 +11,7 @@ Iterate $p$ times.
 1. For each feature $x_j$, try adding $x_j$ to the model and retrain.
 2. Pick the feature that has lowest error; if the penalized error improves, accept this new model.
 
+> [!info]
 > Time complexity is $O(p^2)$ since we go through each feature during every iteration of outer loop.
 
 # Stagewise Regression
@@ -19,4 +21,5 @@ Iterate $p$ times.
 3. Regress $r_t = \alpha_t\phi_t(x)$ to find scaling coefficient $\alpha_t$.
 4. Update our model $h_t(x) = h_{t-1}(x) + \alpha_t\phi_t(x)$.
 
+> [!info]
 > Time complexity is $O(p^2)$, same as stepwise.

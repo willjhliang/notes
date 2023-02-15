@@ -10,7 +10,8 @@ Our model is a binary tree: each internal node is a question, each edge is an an
 
 For discrete features, we can directly check the value in $x$. For continuous features, we must impose a threshold $\alpha$ on the value in $x$ to get a binary answer; in other words, replace feature $x_i$ with $x_i’ = \mathbf{1}(x_i > \alpha)$.
 
->Note that with this threshold method, binary trees are scale invariant. If the scale of a feature increases, the best threshold will increase in scale equivalently. Therefore, the new decision tree after rescaling a feature will be the same.
+> [!note]
+> Note that with this threshold method, binary trees are scale invariant. If the scale of a feature increases, the best threshold will increase in scale equivalently. Therefore, the new decision tree after rescaling a feature will be the same.
 
 # Training
 Given training data $D$,

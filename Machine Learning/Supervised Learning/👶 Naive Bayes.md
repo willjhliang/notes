@@ -30,4 +30,5 @@ $$ \arg\max_k p(y=k)\prod_{j=1}^p p(x_j \vert y=k) $$
 During implementation, we calculate the following instead to avoid underflow.
 $$ \arg\max_k (\log p(y=k) + \sum_{j=1}^p \log p(x_j \vert y=k)) $$
 
->For document classification, in the prediction step, we assume that there is no information in the words we did not observe; a standard probabilistic model would include probability of words not being observed for each word in the vocabulary, instead of only probability of words that appear in the input document
+> [!info]
+> For document classification, in the prediction step, we assume that there is no information in the words we did not observe; a standard probabilistic model would include probability of words not being observed for each word in the vocabulary, instead of only probability of words that appear in the input document

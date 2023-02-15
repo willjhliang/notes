@@ -13,6 +13,7 @@ Univariate correlation builds a model on a single feature to measure how well it
 ## Feature Removal
 Feature removal evaluates the effect of "removing" a feature by replacing it with its average or permuting across samples. In this process, interventional methods may break invariances whereas conditional methods change other features as well to respect correlations (BMI and weight, for example). We can also literally remove it from the data and examine the change in performance.
 
+> [!note]
 > Note that features removed during feature selection or those removed here may be redundant but still correlate with the label; in other words, model interpretation does not directly translate to problem interpretation!
 
 Partial dependence plot reverses the average removal idea, marginalizing all features except one to find its effect on the label. This is similar in effect to univariate correlation.

@@ -11,6 +11,7 @@ Moreover, if $Y$ is the distance of the object point to the optical axis and $y$
 
 Note that in a lens model, we must focus the image by placing the image plane exactly $b$ away from the lens. Otherwise, if it's too forward or backward, the image of that object is blurry.
 
+> [!info]
 > Choosing where we place the image plane is how we decide to focus on foreground or background.
 
 # Pinhole Model

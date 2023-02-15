@@ -3,6 +3,7 @@ LMS is an online learning (streaming) alternative to [[💰 Linear Regression]];
 
 As before, we optimize the $L_2$ loss, but this time with stochastic [[⛰️ Gradient Descent]].
 
+> [!info]
 > For learning rate $\eta$, LMS converges if $0 < \eta < \lambda_{max}$ where $\lambda_{max}$ is the largest value of covariance matrix $X^TX$.
 
 ## Locally Weighted Regression
@@ -21,6 +22,7 @@ Then, go through each observation $x_i$ sequentially,
 1. Let residual $r_i = y_i - \theta^Tx_i$
 2. Update weights $\theta = \theta + \eta r_i x_i$
 
+> [!info]
 > To derive the update step, we observe that the derivative of L2 loss is $-2r_ix_i$, so a move in the gradient step with scaling $\frac{\eta}{2}$ gives us our update equation.
 
 # Prediction

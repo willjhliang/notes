@@ -39,6 +39,7 @@ During deep work sessions, build rituals to repeat day after day; this helps ens
 
 Grand gestures can also help. By radically changing our environment and investing money into it, we increase the perceived importance of our task and thereby boost our motivation.
 
+> [!info]
 > Note that though these rules imply alone work, collaboration can also be a form of deep work, if done correctly. Individuals must challenge each other to be better and still minimize distractions.
 
 There are also four cornerstones of the deep work framework. These are rules that encourage successful execution on top of the strategies above.
@@ -56,6 +57,7 @@ By training ourselves to be fine without distractions (literally be bored), we c
 
 Other smaller methods include setting harsh deadlines to force hard concentration, practicing productive mediation (think hard about one thing during a physical activity), and practice memorization.
 
+> [!info]
 > There is a common misconception that our brain needs downtime—periods of near-zero concentration or attention—that's usually achieved by giving into clickbait distractions. However, unlike muscles, the brain actually just requires change; using it at full capacity during leisure (in reading, for example) is a much better alternative.
 
 ## Deliberate tools

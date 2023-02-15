@@ -10,6 +10,7 @@ For games with opponents, $Q(s', a')$ is instead the opponent network, which has
 
 Another addition to Q-Learning is the use of replay memory $\mathcal{D}$. Instead of optimizing the network with the most recent action, the algorithm instead chooses a random subset of $(s, a, r, s')$ pairs in $\mathcal{D}$ for gradient updates. This allows each episode step to be used for multiple weight updates and also breaks the correlation between consecutive actions, which reduces the variance of the updates.
 
+> [!info]
 > Correlation between actions increases variance because a slight change in earlier actions can have huge impacts on the states and actions we see in the future.
 
 # Model

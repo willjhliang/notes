@@ -1,5 +1,5 @@
 # Theory
-YOLO performs multi-object detection with a single pass through a [[👁️ Convolutional Neural Network]].
+YOLO (You Only Look Once) performs multi-object detection with a single pass through a [[👁️ Convolutional Neural Network]].
 
 We divide the input image with a grid, and each grid cell is responsible for predicting bounding boxes for objects whose center is in the cell. A single cell is limited to predicting $B$ boxes and one class for all bounding boxes predicted by the cell.
 
@@ -40,4 +40,5 @@ Only one bounding box predictor is responsible for each object; the one responsi
 2. $\mathbb{1}_{i}^{obj}$ means there is an object in cell $i$.
 3. $\mathbb{1}_{ij}^{noobj}$ means there's no object for the $j$-th bounding box predictor in cell $i$.
 
+> [!info]
 > If there are $>B$ objects in a cell, YOLO isn't able to predict bounding boxes for all of them. This is a weakness in the design of the algorithm, but it's extremely unlikely for this is occur given a small-enough cell size and large-enough $B$.

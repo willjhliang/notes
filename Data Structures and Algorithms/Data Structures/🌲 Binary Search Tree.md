@@ -32,6 +32,7 @@ class Node:
 			return self.right.search(x) if self.right is not None else True
 ```
 
+> [!info]
 > Note that the implementation above doesn’t include rebalancing.
 
 # Runtime

@@ -3,10 +3,12 @@ Gaussian Mixtures are a soft form of [[🎒 K-Means Clustering]]; instead of ass
 
 Furthermore, each cluster, now called a gaussian mixture, is represented by both a centroid $\mu_k$ and covariance matrix $\Sigma_k$ as well as its size $\pi_k$; size is defined as the probability a simple is drawn from mixture $k$ (which all sum to $1$).
 
+> [!note]
 > In a generative sense, our data is generated from $k$ gaussians, $p(x) = \sum_k \pi_k \mathcal{N}(\mu_k, \Sigma_k)$.
 
 Letting hidden variable $z$ denote the mixture assignment, our generative probability can be rewritten as $$p(x) = \sum_{k=1}^K p(z = k) p(x \vert z = k)$$with $p(z = k) = \pi_k$ and $p(x \vert z = k) = \mathcal{N}(\mu_k, \Sigma_k)$.
 
+> [!info]
 > Note that this equation is incredibly similar to [[👶 Naive Bayes]]. If Naive Bayes lets $p(x \vert y)$ be a Gaussian distribution (instead of discrete), we get a Gaussian Mixture with independent $x$ (diagonal covariance $\Sigma$).
 
 Gaussian mixtures uses the [[🎉 Expectation Maximization]] algorithm in the same way as [[🎒 K-Means Clustering]], first finding the mixture distribution $p(z = k \vert x)$ and then recalculating the parameters for each mixture.

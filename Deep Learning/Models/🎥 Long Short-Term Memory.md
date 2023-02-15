@@ -1,5 +1,5 @@
 # Theory
-LSTMs improve on the standard [[💬 Recurrent Neural Network]] by keeping two separate recurrence tracks for long-term and short-term memory. This avoids the problems that RNNs face with failing to retrieve information that occurred early in the sequence.
+LSTM improves on the standard [[💬 Recurrent Neural Network]] by keeping two separate recurrence tracks for long-term and short-term memory. This avoids the problems that RNNs face with failing to retrieve information that occurred early in the sequence.
 
 The short-term information $h_t$ is passed along similar to how RNNs maintain memory whereas the long-term information $C_t$, known as the cell state, is maintained separately. The flow of information is maintained through gates.
 1. Forget gate uses $h_{t-1}$ and $x_t$ to choose parts of $C_{t-1}$ to "forget," or set to zero.

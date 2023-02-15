@@ -4,6 +4,7 @@ Transformers are encoder-decoder models for sequence processing that only use th
 We use the scaled dot-product attention, a slightly modified version of the general attention mechanism, which is calculated as $$\text{softmax}(\frac{QK^T}{\sqrt{d_k}})V$$
 where $d_k$ is the dimension of the key space.
 
+> [!info]
 > This scaling factor of $\frac{1}{\sqrt{d_k}}$ is introduced to keep the variance at $1$ (instead of scaling with the dimension size), which prevents vanishing gradients in extreme areas of the softmax.
 
 This mechanism is used in the multi-headed self-attention component, which applies it $h$ times. Each time, we calculate $Q$, $K$, and $V$ by projecting the embedding by matrices $W^i_Q,W^i_K, W^i_V$, which the transformer learns, then applying the computation above. The $h$ outputs are concatenated together then projected with $W^O$ to linearly combine them into the final result. This process is illustrated below.

@@ -15,6 +15,7 @@ Let $D$ be a set of coin-flip results, with $n_H$ heads and $n_T$ tails, and let
 For MLE, find $\theta$ that maximizes the probability of $D$ occurring, called the likelihood $P(D \vert \theta)$.
 $$ \begin{align*} \hat{\theta}_{MLE} &= \arg\max_\theta(P(D \vert \theta)) \\ &= \arg\max_\theta(\log(P(D \vert \theta)) \\ &= \arg\max_\theta n_H\log(\theta) + n_T\log(1-\theta) \\ &= \frac{n_H}{n_H + n_T} \end{align*} $$
 
+> [!note]
 > Note that in the equation above, we find the $\arg\max$ over log-likelihood instead of likelihood. This works because log is monotonically increasing, and computing log-likelihood simplifies the math and avoids overflow errors.
 
 For MAP, find $\theta$ that maximizes the probability of $\theta$ given that $D$ occurred, called the posterior $P(\theta \vert D)$ (since this is our revised prior after considering new data $D$). For conjugacy, let $$P(\theta) = Beta(\alpha, \beta) = \frac{\Gamma(\alpha + \beta)}{\Gamma(\alpha) \Gamma(\beta)} \theta^{\alpha-1} (1-\theta)^{\beta - 1}$$follow the same family of distributions as the likelihood and posterior. Then, we can maximize the posterior with [[🪙 Probability Theory#Bayes' Theorem]].

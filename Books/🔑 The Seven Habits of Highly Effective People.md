@@ -44,6 +44,11 @@ To achieve win-win, we must excel in five dimensions.
 5. Processes that focus on the problem and not the person.
 
 ## Seek first to understand, then to be understood
+We often rush into prescriptions without taking time to form a diagnosis. In interpersonal relations, the most important principle is to understand the other person first before we demand to be understood.
+
+Empathic listening is a crucial skill that's often overlooked. Most listen with the intent to reply, not understand—this causes us to see the other's message through our own paradigms instead of their's. If we listen to understand, we satisfy the other person's need to be understood, and that will open up communication on all fronts.
+
+At its core, empathic listening is just rephrasing content and reflecting feeling, but underlying the words is a balance between logical and emotional responses, slowly peeling away layers of understanding and identity. Gradually, we'll understand the other person's paradigms—things they've taken to be facts of life—and express our own ideas to a much more receptive audience.
 
 ## Synergize
 

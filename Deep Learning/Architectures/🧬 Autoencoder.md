@@ -7,6 +7,7 @@ Using the neural network, we still optimize weights to minimize $L_2$ reconstruc
 3.  $L_1$ or $L_2$ regularization penalties.
 4.  Forcing orthogonality or independence.
 
+> [!info]
 > Note that PCA uses the bottleneck and orthogonality constraints, and ICA uses the bottleneck and independence constraints.
 
 Variational autoencoders employ encoder and decoder neural networks, but in between them is a sampling procedure. The encoder produces multiple normal distributions $\mathcal{N}(\mu_x, \sigma_x)$; we sample a point $z$, then pass it through the decoder to get $\hat{x}$. The loss is $$\Vert x - \hat{x}\Vert^2 + KL[\mathcal{N}(\mu_x, \sigma_x), \mathcal{N}(0, 1)]$$with the second part included for regularization.

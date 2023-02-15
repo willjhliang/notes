@@ -5,6 +5,7 @@ We treat each document as a mixture of topics, and each topic has a different pr
 
 ![[20221229103227.png]]
 
+> [!info]
 > Each topic is similar to a [[👶 Naive Bayes]] model, producing words with different probabilities.
 
 Fundamentally, LDA follows a generative process. To create a document,

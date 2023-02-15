@@ -12,6 +12,7 @@ The camera and world coordinate systems are related by rotation and translation,
 Using the equations from [[🔍 Projection Models#Pinhole Model]], we can convert coordinates to pixels with $$\begin{align*} u &= f\frac{X_c}{Z_c} + u_0 \\ v &= f\frac{Y_c}{Z_c} + v_0 \end{align*}$$
 
 We can write this instead as a matrix equation, $$\lambda \begin{pmatrix} u \\ v \\ 1 \end{pmatrix} = \begin{pmatrix} f & 0 & u_0 \\ 0 & f & v_0 \\ 0 & 0 & 1 \end{pmatrix} \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \end{pmatrix}\begin{pmatrix} X_c \\ Y_c \\ Z_c \\ 1 \end{pmatrix} = K \begin{pmatrix}X_c \\ Y_c \\ Z_c\end{pmatrix}$$
+> [!info]
 > We have the intermediate matrix in between because it's used when transforming from world to image coordinates. In this case, we just have $R = I$ and $T = 0$.
 
 To go back from image coordinates to camera coordinates, we rearrange the above $$\begin{pmatrix}X_c \\ Y_c \\ Z_c\end{pmatrix} = \lambda K^{-1} \begin{pmatrix}u \\ v \\ 1\end{pmatrix}$$
@@ -21,6 +22,8 @@ Going from pixels to rays is known as calibration, and the rays are calibrated c
 The world coordinate system is a rotated, translated camera coordinate system. The two are thus related by the equation $$\begin{pmatrix} X_c \\ Y_c \\ Z_c \\ 1 \end{pmatrix} = \begin{pmatrix} R & T \\ 0 & 1 \end{pmatrix} \begin{pmatrix} X_w \\ Y_w \\ Z_w \\ 1 \end{pmatrix}$$
 Another form is $$\begin{pmatrix}X_c \\ Y_c \\ Z_c\end{pmatrix} = R\begin{pmatrix}X_w \\ Y_w \\ Z_w\end{pmatrix} + T$$
 Notice that by setting $X_w = Y_w = Z_w = 0$, we can see that the world origin is at $\begin{pmatrix}X_c \\ Y_c \\ Z_c\end{pmatrix} = T$, in camera coordinates.
+
+> [!info]
 > The direction of $T$ is from camera origin to world origin using camera coordinates.
 
 On the other hand, by setting $X_c = Y_c = Z_c = 0$, we observe that the camera origin is at $\begin{pmatrix}X_w \\ Y_w \\ Z_w\end{pmatrix} = -R^TT$, in world coordinates.

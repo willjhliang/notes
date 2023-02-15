@@ -1,3 +1,6 @@
+> [!warning]
+> Sorry, this note is under construction. Feel free to take a look at what I've got so far, and please come back later!
+
 # Theory
 Faster-RCNN performs object detection using a feature network, region proposal network (RPN), and the Fast RCNN detection network.
 1. Feature network generates a feature map from the input image.
@@ -15,8 +18,6 @@ Each proposal is parameterized relative to an anchor box.
 1. There are $k$ anchor boxes for every pixel in the feature map.
 2. We'll use $k = 9$ for $3$ scales and $3$ aspect ratios.
 3. Bounding box regression outputs $t_x, t_y, t_w, t_h$ for each anchor box that adjusts it to fit a RoI.
-
-> What is "translation invariant" for the anchor boxes?
 
 Classification calculates the probability of an object and not-object for each anchor box.
 

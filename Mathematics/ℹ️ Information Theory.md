@@ -1,10 +1,13 @@
 # Entropy
 Entropy is the average level of "surprise" or "uncertainty" in a probability distribution. The surprise of an individual event $y$ is inversely correlated with the probability of the event happening (we would be surprised if an improbable event happened), so we quantify surprise as  $$\lg (1/P(Y=y)) = -\lg P(Y=y)$$
+
+> [!info]
 > Applying log to the inverse changes the bound from $[1, \infty)$ to $[0, \infty]$.
 
 By combining all events together with an expected value, we get the entropy equation $$H(Y) = -\sum_y P(Y=y)\lg P(Y=y)$$
 Another way to interpret this is the expected number of bits needed to encode $Y$ or number of questions needed to guess $Y$. Tying it all together: the more average surprise we have, the more uncertain we are about the results; the more uncertainty there is, the more bits we need to encode the distribution.
 
+> [!info]
 > Uncertainty is a measure of the variance of a distribution. A distribution with high entropy or uncertainty would be roughly uniform.
 
 Below is a graph of the entropy of binary variable $X$. Highest entropy is when probability is $\frac{1}{2}$, and as probability goes toward one extreme, entropy decreases since $X$ becomes less random.

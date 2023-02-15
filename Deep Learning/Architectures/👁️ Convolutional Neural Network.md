@@ -10,6 +10,7 @@ Each layer has multiple 3D filters, defined by its dimensions, stride, and paddi
 ## Max Pool
 Max pool layers are used to reduce the first two dimensions of a 3D tensor, partitioning the input and getting the maximum value for each. This serves as dimension reduction and prevents overfitting. Below is an example.
 
+> [!info]
 > We use maximum instead of average because most of the input is zero, and we want to capture strong activations instead of muddying the signals with an average.
 
 ![[20221229103207.png|400]]
@@ -19,6 +20,7 @@ CNN consists of convolution, max pool, and dense layers; max pools usually go be
 
 For structured outputs, we don’t use dense layers.
 
+> [!info]
 > Due to using convolutions instead of dense layers, CNNs usually have much fewer weights than it would have if it used dense layers instead.
 
 # Training

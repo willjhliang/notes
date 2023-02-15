@@ -16,7 +16,8 @@ Now we can see that $\sum_{i\in\text{correct}}w^{t+1}_i = \frac{1}{2}$ and $\sum
 
 Lastly, note that there was no explicit loss function to optimize. However, the algorithm implicitly minimizes an exponential loss function, and it learns exponentially fast.
 
->Since it doesn’t directly optimize from training error, it can also cause test error to decrease even with no training error; in a sense, it stretches the margin of classification, making the model more confident in each prediction.
+> [!note]
+> Since it doesn’t directly optimize from training error, it can also cause test error to decrease even with no training error; in a sense, it stretches the margin of classification, making the model more confident in each prediction.
 
 # Model
 The model consists of many weak learners (stumps) $h_t(x)$ as well as their scaling coefficients $\alpha^t$.

@@ -7,4 +7,5 @@ Observe that $\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}$ and $\begin{pmatrix} 0 
 Connecting $A$ and $B$ gives us the horizon, which is defined as $$(h_1 \times h_2)^T \begin{pmatrix} x \\ y \\ 1\end{pmatrix} = 0$$
 in the image, or by the normal vector $h_1 \times h_2$ in projective space.
 
+> [!info]
 > The horizon tells us exactly how the camera is oriented. If it moves to the top, we look downwards. If it moves to the bottom, we look upwards.

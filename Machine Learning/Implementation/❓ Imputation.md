@@ -6,4 +6,5 @@ If values are missing at random, we can assume a generative model form for $x$, 
 
 However, most data aren’t missing at random; in this case, it’s better to add indicator features for whether there’s a missing value as well as imputing with one of the strategies above. For a categorical feature, treat missing as its own class.
 
+> [!info]
 > If there are many categories, we can perform dimensionality reduction with clustering, PCA, or autoencoders.

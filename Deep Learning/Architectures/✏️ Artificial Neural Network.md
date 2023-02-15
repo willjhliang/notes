@@ -5,7 +5,8 @@ As before, we want to minimize the loss $J(\theta)$, which can be [[📌 Norms]]
 
 Neural networks consists of layers of neurons. Each neuron applies weights to its inputs and runs it through an activation function. $$a = f(Wx + b)$$Its inputs are the outputs of all neurons in the previous layer, and its output is fed to every neuron in the following layer.
 
->Modern neurons use the ReLU activation function $f(x) = \max(0, x)$ for faster derivative calculation during training and to avoid gradient vanishing (the problem with sigmoid), which leaves the network in weird local minima. Other options include sigmoid and tanh.
+> [!note]
+> Modern neurons use the ReLU activation function $f(x) = \max(0, x)$ for faster derivative calculation during training and to avoid gradient vanishing (the problem with sigmoid), which leaves the network in weird local minima. Other options include sigmoid and tanh.
 
 A neural network essentially stacks logistic regressions in a complex structure, analogous to pattern recognition. Below is an example of how housing prices could be predicted by a simple network, though it hides links that aren't used; a proper network should have arrows across all pairs of nodes between two layers.
 

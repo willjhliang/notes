@@ -27,6 +27,7 @@ The passion mindset focuses on what the work can offer us. This not only makes u
 
 On the other hand, the craftsman mindset focuses on what we can offer the world. The center of this thinking is the quality of what we produce with our craft, which demands dedication to deliberate practice—strategic, hard work that constantly pushes our limits. Most masters pour thousands of hours into challenging practice, and this is the path to loving what we do.
 
+> [!note]
 > Deliberate practice is far beyond just throwing hours into a skill. The difference between those who plateau and those who go beyond is not the time spent but the effort put into conquering activities just outside their range of ability and receiving timely feedback for improvement.
 
 Starting out, our task at hand is to put aside the question of whether the job is our passion. Our focus should be to become so good they can't ignore us. Though this is a leap of faith, it's rooted in the fundamental definition of good jobs.

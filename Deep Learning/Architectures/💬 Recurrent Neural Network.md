@@ -11,7 +11,7 @@ The model itself shares many similarities with other neural networks. The main a
 # Training
 Training is done via backpropagation at each point in time.
 
-One major problem RNN faces is exploding and vanishing gradients. When we backpropagate through time, if the change in consecutive time steps is not exactly one, the gradient decreases or increases exponentially, thus causing changes to earlier time steps to be in the extreme. [[🎥 Long Short Term Memory]] and [[⛩️ Gated Recurrent Unit]]s are more advanced RNNs designed to solve this problem.
+One major problem RNN faces is exploding and vanishing gradients. When we backpropagate through time, if the change in consecutive time steps is not exactly one, the gradient decreases or increases exponentially, thus causing changes to earlier time steps to be in the extreme. [[🎥 Long Short-Term Memory]] and [[⛩️ Gated Recurrent Unit]]s are more advanced RNNs designed to solve this problem.
 
 # Prediction
 To predict, the input sequence is split into individual units, which are sent in order to the RNN. The RNN can produce any number of outputs for one-to-one, one-to-many, many-to-one, and many-to-many tasks.

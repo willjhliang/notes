@@ -4,6 +4,7 @@ $$ \theta := \theta - \alpha\frac{\partial}{\partial\theta}J(\theta) $$
 
 Note that this formula is applied over all datapoints in the training data.
 
+> [!note]
 > Learning rate $\alpha$ must be carefully chosen. If it's too large, the model won't converge. If it's too small, the model will converge too slowly.
 
 Below is a graphical representation with two weights $\theta_1$ and $\theta_2$, with the inner-most blue ring representing the global minimum $J(\theta)$
