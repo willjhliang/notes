@@ -8,7 +8,7 @@ Intuitively, we can see the new classification (assuming $\eta = 1$ for simplici
 For linearly separable data and $\eta = 1$, the algorithm will converge after $<\frac{R^2}{\gamma^2}$ mistakes where $R = \max_i \Vert x^{(i)}\Vert_2$ (size of biggest $x_i$) and margin $\gamma \leq y^{(i)}w_*^Tx^{(i)}$, $w_*$ being the optimal classifier.
 
 ---
-###### Proof of convergence
+#### Proof of convergence
 We'll prove the convergence property for $\Vert x^{(i)} \Vert_2 \leq 1$ for all $i$. Then, the perceptron will convergence in $< \frac{1}{\gamma^2}$ steps.
 
 First, note that we can assume that $\Vert w_* \Vert = 1$ since the optimal hyperplane is scale-invariant. Then, let $\theta$ be the angle between $w_t$ and $w_*$, and consider $\cos \theta = \frac{w_*^T w_t}{\Vert w_t \Vert}$.
