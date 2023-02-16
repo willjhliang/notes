@@ -19,6 +19,7 @@ Training these models involve optimizing their parameters, or weights.
 1. [[⛰️ Gradient Descent]] gradually moves down a convex loss function.
 2. [[🔎 Greedy Search]] performs feature selection for non-convex loss.
 3. [[🎉 Expectation Maximization]] optimizes hidden variables in unsupervised models.
+4. [[🎛️ Constrained Optimization]] generalizes certain objectives with the Lagrangian.
 
 In practice, [[👕 Overfitting]] is a common problem where models learn noise in the training data that's not part of the real world. The solution is two-fold.
 1. [[⚽️ Regularization Penalties]] in loss functions apply weight shrinkage or selection.

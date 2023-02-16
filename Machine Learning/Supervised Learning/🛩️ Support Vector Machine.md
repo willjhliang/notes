@@ -10,12 +10,13 @@ Since the overall scale of the data doesn't affect the hyperplane, SVM solves wi
 
 The size of the margin is then solely dependent on the hyperplane and can be calculated to be $\frac{2}{\Vert w \Vert}$. To maximize this value, our objective, known as the separable primal problem, is $$\min_{w, b} \frac{1}{2} \Vert w\Vert^2 \text{ such that } y^{(i)}(w^Tx^{(i)} + b) \geq 1$$
 
-Applying the Lagrangian, we can transform this into the separable dual form $$\max_{\alpha \geq 0} \sum_{i=1}^n \alpha_i - \frac{1}{2} \sum_{i=1}^n\sum_{j=1}^n \alpha_i \alpha_j y^{(i)} y^{(j)}(x^{(i)} \cdot x^{(j)}) \text{ such that } \sum_{i=1}^n\alpha_iy^{(i)} = 0$$
-> [!note]
-> In this form, the data points with nonzero $\alpha_i$ are support vectors. We can calculate weights $w = \sum_{i=1}^n\alpha_iy_ix_i$, bias $b = y^{(i)} - w^Tx^{(i)}$ for $\alpha_i > 0$.
+Our constraints satisfy the strong duality conditions, so we can use [[🎛️ Constrained Optimization]] to solve for $w$. Applying the augmented Lagrangian and solving for the Lagrange dual, we can transform this into the separable dual form $$\max_{\alpha \geq 0} \sum_{i=1}^n \alpha_i - \frac{1}{2} \sum_{i=1}^n\sum_{j=1}^n \alpha_i \alpha_j y^{(i)} y^{(j)}(x^{(i)} \cdot x^{(j)}) \text{ such that } \sum_{i=1}^n\alpha_iy^{(i)} = 0$$ where weights $w = \sum_{i=1}^n\alpha_iy_ix_i$ and bias $b = y^{(i)} - w^Tx^{(i)}$ for $\alpha_i > 0$.
 
-This equation tells us that the hyperplane is solely dependent on the similarity between pairs $x^{(i)}$ and $x^{(j)}$. Currently, this similarity is measured by the dot product, but we can instead replace it with [[🍿 Kernels]] to achieve the kernelized separable dual $$\max_{\alpha \geq 0} \sum_{i=1}^n \alpha_i - \frac{1}{2} \sum_{i=1}^n\sum_{j=1}^n \alpha_i \alpha_j y^{(i)} y^{(j)}k(x^{(i)}, x^{(j)}) \text{ such that } \sum_{i=1}^n\alpha_iy^{(i)} = 0$$
-This generalized form allows SVM to classify linearly inseparable data. The point of a kernel is that it measures similarity between the transformation of $x^{(i)}$ and $x^{(j)}$ to another feature space without knowing what the feature space is. This transformation, however, may allow the data to become linearly separable.
+> [!note]
+> By the KKT condition, one of $\alpha_i$ or $y^{(i)}(w^Tx^{(i)}+b)$ must be $0$. Therefore, the data points with nonzero $\alpha_i$ are support vectors.
+
+This equation tells us that the hyperplane is solely dependent on the similarity between pairs $x^{(i)}$ and $x^{(j)}$. Currently, this similarity is measured by the dot product, but we can instead replace it with a [[🍿 Kernel]] to achieve the kernelized separable dual $$\max_{\alpha \geq 0} \sum_{i=1}^n \alpha_i - \frac{1}{2} \sum_{i=1}^n\sum_{j=1}^n \alpha_i \alpha_j y^{(i)} y^{(j)}k(x^{(i)}, x^{(j)}) \text{ such that } \sum_{i=1}^n\alpha_iy^{(i)} = 0$$
+that can separate linearly inseparable data.
 
 If we don't need to perfectly separate the data, the above algorithms will not converge if there's no perfect separation. In this case, the non-separable SVM introduces the slack variable $$\xi_i = \max(0, 1 - y^{(i)}(w^Tx^{(i)} + b))$$which we can interpret as the amount that $x^{(i)}$ goes into the margin or the penalty on low-confidence classifications.
 

@@ -23,8 +23,10 @@ However, the maximum value for cosine is $1$, so $$1 \geq \gamma\sqrt{T} \righta
 ---
 
 If the data is not linearly separable, the simple perceptron will keep updating $w$, we can need to manually stop training. After stopping, there are variations in the way we get our final model.
-1.  Voted perceptron: keep track of all intermediate models, predict the majority vote of running input $x$ through all models
-2.  Averaged perceptron: final model is average of all intermediate models, essentially an approximation of voted perceptron that has much faster prediction times
+1. Voted perceptron: keep track of all intermediate models, predict the majority vote of running input $x$ through all models
+2. Averaged perceptron: final model is average of all intermediate models, essentially an approximation of voted perceptron that has much faster prediction times
+
+We can also apply the [[🍿 Kernel]] trick to the perceptron. Note that due to our update rule, our weights $w$ will always be a linear combination of $x$. Then, if we let $w = \alpha_jx_j$, we can replace all instances of $w^Tx$ with $\sum_{j=1}^n \alpha_j x_j^T x$ so that everything is in terms of inner products between inputs. Then, we replace $x_j^T x$ with $k(x_j, x)$ to achieve the kernelized perceptron.
 
 A nuanced variation is the Margin-Infused Relaxed Algorithm (MIRA), a type of passive-aggressive perceptron that which minimizes the hinge loss at each observation. It updates $w$ to be as close as possible to the old weights while setting hinge loss to $0$ (in case of misclassification or correct prediction within the margin); in other words, it makes the smallest change to $w$ for a correct prediction outside the margin.
 

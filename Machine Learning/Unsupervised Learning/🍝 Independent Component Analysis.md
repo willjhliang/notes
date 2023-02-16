@@ -1,15 +1,21 @@
 # Theory
-ICA is an alternative to [[🗜️ Principle Component Analysis]] where we find $S$ and $W$ such that embeddings or scores $s_j$, analogous to $z_j$ from PCA, are as independent as possible, with maximum [[📏 KL Divergence]] or low mutual information.
-$$ X = SW^+ $$
-$W^+$ is analogous to loadings, and $S$ are principal component scores.
+ICA is an algorithm for source separation, also known as disentanglement. For example, if we have $k$ recordings of $k$ people talking, ICA outputs $k$ audio sources, one for each voice. Generally, given an input $x$, our goal is to find output $s$ of the same dimension so that $s_i$ are as independent as possible.
 
-Maximizing independence of embeddings is known as disentanglement; ideally, each feature in $s^{(i)}$ represents an independent source that formed the original $x^{(i)}$; one example is un-mixing two voices from two recordings.
+> [!info]
+> Note that though ICA shares a similar name with [[🗜️ Principle Component Analysis]], their objectives are unrelated.
+
+Let $A$ be the mixing matrix such that $x = As$. We want to find the un-mixing matrix $W = A^{-1}$ so that $s = Wx$. Note that if $s$ is non-gaussian, our solution $W$ is equivalent across permutation or scaling.
+
+First, assume independence across sources, and let them come from some non-gaussian distribution $p_s$. We solve ICA by maximizing likelihood $$p(s) = \prod_{j=1}^d p_s(s_j)$$
+Converting to $x$, we have $$p(x; W) = \prod_{j=1}^d p_s(w_j^Tx) \cdot \vert W \vert$$
+Next, we assume that the cdf of the sources is a sigmoid, so the pdf $$p_s(s) = g'(s) \text{ where } g(s) = \frac{1}{1+e^{-s}}$$
+
+Then, our log likelihood is $$l(W, x) = \sum_{i=1}^n \sum_{j=1}^d \log g'(w_j^Tx) + \log \vert W \vert$$
+
+Finally, this can be maximized via [[⛰️ Gradient Descent]].
 
 # Training
-Our loss function includes both reconstruction loss and mutual information. In other words, we want to both minimize the reconstruction error as well as mutual information between sources $s_j$, defined as $$I(s_1,\ldots s_k) = \sum_{j=1}^kH(s_j) - H(s)$$
-Another interpretation of mutual information is with KL divergence, measuring the similarity between the joint distribution and combination of independent distributions $$KL(p(s_1, \ldots, s_k)\Vert p(s_1)p(s_2)\ldots p(s_k))$$
-
-This loss function is not quadratic, so optimization cannot be done with [[📎 Singular Value Decomposition]]. The optimization method was not covered in class.
+Our loss function is the negative of the log likelihood above, and we optimize with gradient descent.
 
 # Prediction
-Similar to PCA, we project $x^{(i)}$ onto components to get the scores of our embedding, and apply them to our components to recreate $x^{(i)}$.
+To get the sources from $x$, we apply our learned $W$ onto $x$.

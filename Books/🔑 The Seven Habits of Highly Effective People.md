@@ -1,7 +1,7 @@
-> [!warning]
-> Sorry, this note is under construction. Feel free to take a look at what I've got so far, and please come back later!
-
 # Summary
+1. Growth comes from shifting fundamental paradigms—our values and principles—through significant effort and reflection.
+2. The Private Victory deals with the power to be proactive, visualize our future, and discipline our actions.
+3. The Public Victory involves learning to act with a win-win mentality, emphatically understand others, and cooperate with synergy.
 
 # Notes
 To improve, we must change how we perceive the world. In one-shot situations, we may get by with tips from the Personality Ethic—strategies to improve our image—but ultimately, it comes down to the fundamental integral and strength of our character that leads to greatness; our paradigm is the foundation how our attitude and behavior.
@@ -51,5 +51,17 @@ Empathic listening is a crucial skill that's often overlooked. Most listen with 
 At its core, empathic listening is just rephrasing content and reflecting feeling, but underlying the words is a balance between logical and emotional responses, slowly peeling away layers of understanding and identity. Gradually, we'll understand the other person's paradigms—things they've taken to be facts of life—and express our own ideas to a much more receptive audience.
 
 ## Synergize
+Synergy makes the whole greater than a sum of its parts. Synergistic communication requires us to be open to changes; in doing so, we're free to consider new possibilities and alternatives. This principle can be applied anywhere from teaching to business as long as a high level of trust and cooperation exists.
+
+The differences between people give new opportunities for creativity and growth. *Everyone sees the world not as it is but as they are.* Realizing this fundamental paradigm and recognizing the possibility of both people being right gives us rich new experiences and knowledge. This is the path to a third alternative.
 
 ## Sharpen the saw
+Our final habit is renewal on four fronts: physical, spiritual, mental, and emotional. It's critical that we express all our dimensions regularly and consistently, making an investment in ourselves for our future.
+1. Physically, we need to eat, rest, relax, and exercise. To improve, we need to exert ourselves beyond our limits so that nature can rebuild us stronger than before.
+2. Spiritually, we must reflect and renew our value system, taking time to think about the core of our soul. Meditation and nature can help remove distractions and tie us back to this center.
+3. Mentally, it's imperative to keep our minds sharp. We do this by continuously learning new things, honing our mind and preventing atrophy.
+4. Emotionally and socially, we must not only maintain relationships but also build our own sense of security through integrity and peace of mind. This require personal harmony with our values and cooperative interdependence with others.
+
+Self-improvement also involves others. We are influenced by how others perceive us, so we are responsible for what we reflect to others about themselves. As Goethe taught, "Treat a man as he is and he will remain as he is. Treat a man as he can and should be and he will become as he can and should be."
+
+Lastly, as we continue in the upwards spiral of growth, we must remember to educate and obey our conscience. This is the final key to the cycle of learning, commitment, and action that follows from the seven habits.

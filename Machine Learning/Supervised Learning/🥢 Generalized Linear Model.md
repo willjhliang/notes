@@ -15,7 +15,7 @@ Distributions that fall into this family include the following.
 Another way we can view the link function is that it predicts the expected value of the distribution we select, with $\eta = \theta^T x$. We choose the distribution depending on our problem: Bernoulli for classification, Gaussian for regression, and the others depending on other output requirements.
 
 ## Radial Basis Functions
-Radial basis functions are especially powerful and common. They use $d$ gaussian [[🍿 Kernels]], $z_i$ is $x$’s position on kernel $i$’s distribution, or $k(x, \mu_i)$. These kernel centers $\mu_i$ are calculated with [[🎒 K-Means Clustering]], chosen randomly from datapoints, or estimated with nonlinear regression.
+Radial basis functions are especially powerful and common. They use $d$ gaussian [[🍿 Kernel]]s, $z_i$ is $x$’s position on kernel $i$’s distribution, or $k(x, \mu_i)$. These kernel centers $\mu_i$ are calculated with [[🎒 K-Means Clustering]], chosen randomly from datapoints, or estimated with nonlinear regression.
 
 By projecting our data onto the multiple RBFs, we can perform changes to our data.
 1. If $d < p$, we essentially perform dimensionality reduction. Conversely, with $d > p$, we increase dimensionality.

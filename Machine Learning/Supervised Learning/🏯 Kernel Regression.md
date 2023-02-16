@@ -1,5 +1,5 @@
 # Theory
-Kernel Regression is similar to [[🏠 K-Nearest Neighbors]]. However, instead of a hard $K$ cutoff, we get the average across all data points weighted by their similarity as measured by [[🍿 Kernels]].
+Kernel Regression is similar to [[🏠 K-Nearest Neighbors]]. However, instead of a hard $K$ cutoff, we get the average across all data points weighted by their similarity as measured by [[🍿 Kernel]]s.
 
 # Prediction
 Given input $x$ and training data $D$,
